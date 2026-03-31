@@ -49,7 +49,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-title">
-            <strong>CSE Student @ LPU</strong> · Aspiring Software Developer &amp; Data Enthusiast
+            <strong>CSE Student </strong> · Aspiring Software Developer &amp; Data Enthusiast
           </p>
 
           <div className="hero-links">
@@ -69,7 +69,7 @@ export default function Hero() {
               View My Work <ArrowIcon />
             </a>
             <a href="/resume.pdf" download="Akshat_Garg_Resume.pdf" className="hero-cta secondary">
-              Download Resume <DownloadIcon />
+              Resume <DownloadIcon />
             </a>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Hero() {
         </div>
         <div>
           <div className="hero-stat-value">7.7</div>
-          <div className="hero-stat-label">CGPA @ LPU</div>
+          <div className="hero-stat-label">CGPA </div>
         </div>
         <div>
           <div className="hero-stat-value">4</div>
