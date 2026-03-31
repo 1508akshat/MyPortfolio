@@ -7,7 +7,7 @@ const skills = [
   {
     icon: '🌐',
     title: 'Frameworks & Web',
-    tags: ['HTML', 'CSS'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
   },
   {
     icon: '🛠️',

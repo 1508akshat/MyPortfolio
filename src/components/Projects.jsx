@@ -1,8 +1,8 @@
 const ExternalLinkIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-    <polyline points="15 3 21 3 21 9"/>
-    <line x1="10" y1="14" x2="21" y2="3"/>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
   </svg>
 )
 
@@ -13,7 +13,7 @@ const projects = [
     date: '2025',
     github: 'https://github.com/1508akshat/UrbanEase',
     live: 'https://theurbanease.vercel.app/',
-    image: 'https://placehold.co/600x400/12121a/7c5cbf?text=UrbanEase+Preview',
+    image: '/urbanease.png',
     bullets: [
       'Built a full-stack web application to streamline urban service requests and civic issue reporting.',
       'Developed responsive UI with modern design, ensuring seamless experience across devices.',
@@ -27,7 +27,7 @@ const projects = [
     date: '2025',
     github: 'https://github.com/1508akshat/ExpiryTracker',
     live: null,
-    image: 'https://placehold.co/600x400/12121a/4ade80?text=Inventory+App+Preview',
+    image: '/ExpiryTracker.png',
     bullets: [
       'Developed an inventory management system with integrated expiry date tracking for perishable items.',
       'Implemented alert system to notify users of upcoming and expired products to minimize waste.',
@@ -39,9 +39,9 @@ const projects = [
     icon: '🎲',
     title: 'Dice Game Simulator',
     date: 'Jun 2025 – Jul 2025',
-    github: 'https://github.com/1508akshat',
+    github: 'https://github.com/1508akshat/DiceGameSimulator',
     live: null,
-    image: 'https://placehold.co/600x400/12121a/60a5fa?text=Dice+Game+Preview',
+    image: '/DiceGame.png',
     bullets: [
       'Developed a console-based multiplayer dice game in C++, enabling dynamic player input, real-time score tracking, and randomized gameplay.',
       'Applied OOP and modular functions to design scalable game logic and manage player data efficiently.',
@@ -53,9 +53,9 @@ const projects = [
     icon: '💉',
     title: 'COVID-19 Vaccination Analysis & Dashboard',
     date: 'Apr 2025 – May 2025',
-    github: 'https://github.com/1508akshat',
+    github: 'https://github.com/1508akshat/Python-Project',
     live: null,
-    image: 'https://placehold.co/600x400/12121a/f472b6?text=COVID+Dashboard',
+    image: '/Covid19.png',
     bullets: [
       'Processed 150K+ COVID-19 vaccination records to uncover temporal, demographic, and regional trends.',
       'Designed an interactive Excel dashboard with pivot tables, charts, and slicers for state-wise analysis.',
