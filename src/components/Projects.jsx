@@ -26,7 +26,7 @@ const projects = [
     title: 'Inventory Manager with Expiry Tracker',
     date: '2025',
     github: 'https://github.com/1508akshat/ExpiryTracker',
-    live: null,
+    live: 'https://expiry-tracker-beta.vercel.app/',
     image: '/ExpiryTracker.png',
     bullets: [
       'Developed an inventory management system with integrated expiry date tracking for perishable items.',
