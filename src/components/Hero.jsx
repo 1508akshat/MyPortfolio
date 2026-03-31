@@ -54,16 +54,13 @@ export default function Hero() {
 
           <div className="hero-links">
             <a href="https://github.com/1508akshat" target="_blank" rel="noopener noreferrer" className="hero-link">
-              <GithubIcon /> github.com/1508akshat
+              <GithubIcon /> GitHub
             </a>
             <a href="https://linkedin.com/in/akshat-lpu2027" target="_blank" rel="noopener noreferrer" className="hero-link">
               <LinkedinIcon /> LinkedIn
             </a>
             <a href="mailto:ak15garg2005@gmail.com" className="hero-link">
-              <MailIcon /> ak15garg2005@gmail.com
-            </a>
-            <a href="tel:+919599436837" className="hero-link">
-              <PhoneIcon /> +91 9599436837
+              <MailIcon /> Mail
             </a>
           </div>
 
