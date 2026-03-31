@@ -13,6 +13,7 @@ const projects = [
     date: '2025',
     github: 'https://github.com/1508akshat/UrbanEase',
     live: 'https://theurbanease.vercel.app/',
+    image: 'https://placehold.co/600x400/12121a/7c5cbf?text=UrbanEase+Preview',
     bullets: [
       'Built a full-stack web application to streamline urban service requests and civic issue reporting.',
       'Developed responsive UI with modern design, ensuring seamless experience across devices.',
@@ -26,6 +27,7 @@ const projects = [
     date: '2025',
     github: 'https://github.com/1508akshat/ExpiryTracker',
     live: null,
+    image: 'https://placehold.co/600x400/12121a/4ade80?text=Inventory+App+Preview',
     bullets: [
       'Developed an inventory management system with integrated expiry date tracking for perishable items.',
       'Implemented alert system to notify users of upcoming and expired products to minimize waste.',
@@ -39,6 +41,7 @@ const projects = [
     date: 'Jun 2025 – Jul 2025',
     github: 'https://github.com/1508akshat',
     live: null,
+    image: 'https://placehold.co/600x400/12121a/60a5fa?text=Dice+Game+Preview',
     bullets: [
       'Developed a console-based multiplayer dice game in C++, enabling dynamic player input, real-time score tracking, and randomized gameplay.',
       'Applied OOP and modular functions to design scalable game logic and manage player data efficiently.',
@@ -52,6 +55,7 @@ const projects = [
     date: 'Apr 2025 – May 2025',
     github: 'https://github.com/1508akshat',
     live: null,
+    image: 'https://placehold.co/600x400/12121a/f472b6?text=COVID+Dashboard',
     bullets: [
       'Processed 150K+ COVID-19 vaccination records to uncover temporal, demographic, and regional trends.',
       'Designed an interactive Excel dashboard with pivot tables, charts, and slicers for state-wise analysis.',
@@ -71,30 +75,37 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((p) => (
           <div key={p.title} className="project-card">
-            <div className="project-header">
-              <div className="project-icon">{p.icon}</div>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link-btn">
-                  GitHub <ExternalLinkIcon />
-                </a>
-                {p.live && (
-                  <a href={p.live} target="_blank" rel="noopener noreferrer" className="project-link-btn project-link-live">
-                    Live <ExternalLinkIcon />
-                  </a>
-                )}
+            {p.image && (
+              <div className="project-image-wrap">
+                <img src={p.image} alt={`${p.title} preview`} className="project-image" />
               </div>
-            </div>
-            <div className="project-title">{p.title}</div>
-            <div className="project-date">{p.date}</div>
-            <ul className="project-bullets">
-              {p.bullets.map((b, i) => (
-                <li key={i}>{b}</li>
-              ))}
-            </ul>
-            <div className="project-tech">
-              {p.tech.map((t) => (
-                <span key={t} className="tech-tag">{t}</span>
-              ))}
+            )}
+            <div className="project-content">
+              <div className="project-header">
+                <div className="project-icon">{p.icon}</div>
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link-btn">
+                    GitHub <ExternalLinkIcon />
+                  </a>
+                  {p.live && (
+                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="project-link-btn project-link-live">
+                      Live <ExternalLinkIcon />
+                    </a>
+                  )}
+                </div>
+              </div>
+              <div className="project-title">{p.title}</div>
+              <div className="project-date">{p.date}</div>
+              <ul className="project-bullets">
+                {p.bullets.map((b, i) => (
+                  <li key={i}>{b}</li>
+                ))}
+              </ul>
+              <div className="project-tech">
+                {p.tech.map((t) => (
+                  <span key={t} className="tech-tag">{t}</span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
