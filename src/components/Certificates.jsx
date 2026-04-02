@@ -9,7 +9,7 @@ export default function Certificates() {
   return (
     <section id="certificates">
       <div className="section-label">// 04. certificates</div>
-      <h2 className="section-title">Credentials</h2>
+      <h2 className="section-title">Certifications</h2>
       <div className="section-divider" />
 
       <div className="certs-grid">
